@@ -6,6 +6,6 @@ public class DemoContoller {
 
     @GetMapping("/hello")
     public void Hello(){
-        System.out.println("Hello");
+        System.out.println("Hellowwww");
     }
 }
