@@ -2,11 +2,14 @@ package com.example.store.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
+@RequestMapping("user/hello")
 public class DemoContoller {
 
-    @GetMapping("/user/hello")
+    @GetMapping
     public void Hello(){
         System.out.println("Hellowwww");
     }
