@@ -2,6 +2,7 @@ package com.example.store.controllers;
 
 import com.example.store.models.Customer;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("customer/view")
+@CrossOrigin(origins = "https://store-5ylu.onrender.com")
 public class DemoContoller {
 
     private static final List<Customer> CUSTOMERS = List.of(
